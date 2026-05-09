@@ -1,0 +1,367 @@
+/*Styles to apply to all elements*/
+*{
+    font-family: LTC Caslon;
+    background-color: #f6f5f1;
+}
+
+
+body{
+    font-family: arial, sans-serif;
+    background-color: #f6f5f1;
+}
+
+header{
+    padding: 20px;
+    background-color: #f6f5f1;
+    text-align: center;
+    color: #74605A;
+}
+
+h1{
+    color: #74605A;
+}
+p{
+    color: #6C6C6C;
+}
+#gallery img{
+    margin-bottom: 15px;
+}
+
+footer{
+    padding: 20px;
+    background-color: #f6f5f1;
+    color: #E8E3DF;
+    text-align: center;
+}
+
+#about{
+    margin: 40px 0;
+}
+
+.LowSpacing{
+  padding-bottom: 50px;
+}
+
+.container{
+    max-width: 1140px;
+}
+
+#title{
+    padding: 40px;
+    text-align: center;
+}
+
+/*Nav-bar styles*/
+.nav-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: inherit; 
+  text-decoration: none; 
+}
+  
+ul{
+  align-items: center;
+  justify-content: center;
+}
+
+.nav{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.logo-center{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar{
+    position: relative;
+    padding: 0;
+    padding-bottom: 5%;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    background-color: #826B64;
+}
+
+/*Row and Column styling*/
+header .row{
+    display:flex;
+    text-align: center;
+    
+}
+
+.row{
+    flex-wrap:wrap;
+    flex-direction: row;
+    width: 60%;
+    justify-content: center;
+    margin-left: 20%;
+}
+
+.col {
+  flex: 3;
+  text-align: center;
+  padding-bottom:10%
+}
+
+/*Image styles*/
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/*Hamburger menu rules*/
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+    background: black;
+    z-index: -1;
+}
+
+#hamburger-input{
+  display: none;
+}
+
+#hamburger-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(
+      to bottom, 
+      #826B64, #826B64 20%, 
+      #f6f5f1 20%, #f6f5f1 40%, 
+      #826B64 40%, #826B64 60%, 
+      #f6f5f1 60%, #f6f5f1 80%, 
+      #826B64 80%, #826B64 100%
+    );
+}
+
+#hamburger-menu #sidebar-menu {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 200px;
+    height: 100%;
+    background-color: #826B64;
+    transition: 0.3s;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+#hamburger-menu h3 {
+  color: #f6f5f1;
+  background-color: #826B64;
+  font-size: 2.2rem;
+}
+
+#hamburger-menu ul {
+  padding-left: 0px;
+  background-color: #826B64;
+}
+
+#hamburger-menu li {
+  list-style-type: none;
+  line-height: 3rem;
+  background-color: #826B64;
+}
+
+#hamburger-menu a {
+  color: #f6f5f1;
+  background-color: #826B64;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+#hamburger-menu a:hover {
+  text-decoration: underline;
+}
+
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+    visibility: visible;
+    left: 0;
+}
+#hamburger-input:checked ~ .overlay{
+   visibility: visible;
+  opacity: 0.4;
+}
+
+/*Screen width rules*/
+.desktop-hidden {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .navbar {
+    display: none;
+  }
+  #hamburger-menu {
+    display: inline;
+    z-index: 1;
+  }
+  .mobile-hidden {
+    display: none;
+  }
+  .desktop-hidden {
+    display: contents;
+  }
+}
+  
+/*Gallery styling*/
+.gallery {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 5px;
+}
+
+.gallery-item {
+    border: 1px solid #826B64;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    max-height: fit-content;
+}
+
+.gallery-item img {
+    max-width: auto;
+   
+    display: block;
+    max-height: 100%;
+    object-fit: cover;
+}
+/*Form styling*/
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+  /*Button styles*/
+button {
+  background-color: #967F78;
+  color: #FFFFFF;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+  
+button:hover {
+  opacity: 0.8;
+  background-color: #826B64;
+  color: #FFFFFF;
+}
+  
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+  
+/*Image container*/
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+  
+/*Moo*/
+img.cow {
+  width: 20%;
+  border-radius: 20%;
+}
+  
+.container {
+  padding: 16px;
+}
+  
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+  /* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+      display: block;
+      float: none;
+  }
+  .cancelbtn {
+      width: 100%;
+  }
+}
+
+/*Font rules*/
+@font-face {
+	font-family: "LTC Caslon";
+	font-weight: 400;
+	font-style: normal;
+	src: url(https://fonts-pw.pixieset.com/fonts/ltccaslon/n4.woff2?Expires=1736373611&Signature=o1oDRxiht8s4HcYmQZWIzo2XbUi-BGc85h-KV5SX8sVeNjL9~7eDEauDPve4pIJbx0rEtxpOSDA~7omdAgTKRdkNiedvsHfsVpAbSiGzkAQYQ2K~AIM5Y~XclSFZHJi1Y2iCy3fscb6VveBEj-jUMUsYhV3tWGnj87FWAhNi88xQUCTvX25dgSHuF8A6g1Sr1D27K-BKPbqnnBvP~8KxklTgvX8X7IkMy~UYc1dhj-Whiy1AkVcuWpdy9e~L4TunqgwEnztydHkivkNN7KbSo0iTm-cSYeKWuJnx0kIOIC2K4~00-1qN0hMQPgnoATC3GeJRI7Fbw4ghsh8ZAZZAfA__&Key-Pair-Id=K3RI8219ESW2NK) format("woff2"), url(https://fonts-pw.pixieset.com/fonts/ltccaslon/n4.woff?Expires=1736373611&Signature=S6kIV7sidtoJrPqYNQRTBsa~pLiCwjcms399h0rlDgL40qZ-NXSYDN6D6W70lPhu1Yu0pB3-lnPi8E0v16dkQF6ecGzzQ9cT3dgEB3~Le74ed~q62AyESD1EJW98mJ6kxNdna7Nyf~tjHSr0Li4xITg6iktbrIJgY-ih3D5cWkIy-SGOFgU-xMIhdOnEHDIYOKJ2GT8HZyUjXJRlzypQx7Fu2V9rQRE8gA3SPbkwebqGqiMS-xceRFFuoMW3spFzqvrwACHUEwSj78fB~0U6keHbUyfv5sj1UTa9PH~2zrqY14deucwCVVtATKaqwK0myvrjrYEhxSc2QLkzJl2~zA__&Key-Pair-Id=K3RI8219ESW2NK) format("woff");
+}
+@font-face {
+	font-family: "LTC Caslon";
+	font-weight: 400;
+	font-style: italic;
+	src: url(https://fonts-pw.pixieset.com/fonts/ltccaslon/i4.woff2?Expires=1736373611&Signature=Iutj9vMT-kmuzeY17KHVo4Og8u4FYen1qUmzlCeC-osSxAjWa5Fcm5X7QR8h9vcxzRC8JuP1tYCCL1bJNUG9GtijcHPqfzLjcL-vV8A~sAhgsZbVmk21KtPYQi7eAwkqLvcXfl6m4vdEzh~ZfsxFUSCkyO6e2pUxqwr08JK53r5eJZJIDcOFWIhShKp9scFwUej103ORBnk-SpB3vkWIQIHyoQkIZNMsJTzpkWqQQf5pnsnbXKa8QydPyLdeo7Jfk3gdKX8PxMm5SxnNFWzNhrfbDg-~olVpgOoLf8IvbHPVJxef3EVB8iQbKnJjpiq5TRmAKq5RB2OsyjEIqOH9EQ__&Key-Pair-Id=K3RI8219ESW2NK) format("woff2"), url(https://fonts-pw.pixieset.com/fonts/ltccaslon/i4.woff?Expires=1736373611&Signature=l67pV2j-HmHgTpFAk~AaovmFNfket8U9YMPugsZbEu7jREEx~kLxvOmf2EqZtlQCiLnzmeMkYYp7T417BQMU5ZMtSKAavtmkBQaYiQe4wABKbsLnhr23A6lYpqNYOPkSvJUVP~9j6JGew5F2-syj57vvUpfLQOQ6hf4vjj1iD2A5-JO2UNK5a0WabhNx~93XzPVmT1c4DAXjrogUQRiolrcEK3zlo7kt04jeVav37s164NtF-nEUR2UQ4sGOfdabdLQtS3Q0EZL2cUiGDCIdZtpL7gdi93WayCsleVqGaBf3qvvB05mlmvbNEYH4qrNtXPpbchW7aFbR9IUjAqF5JA__&Key-Pair-Id=K3RI8219ESW2NK) format("woff");
+}
+@font-face {
+	font-family: "LTC Caslon";
+	font-weight: 700;
+	font-style: normal;
+	src: url(https://fonts-pw.pixieset.com/fonts/ltccaslon/n7.woff2?Expires=1736373611&Signature=DMBVrBhEUmmWTDoXSMzkpCZ9vxu~8VCaaf09cK6Q3zdHRx2Ye9di~FVssj3xZwpjRUXczKbo5vVpCg8fvlrU82EUJmkYy9SLv~d~tSvM9RzLh6p5AvfRxDwIqGQw9QeaXca4PKpoe0KaJ9-EFvlaX76kpA8L92Y3n48FpRfj3rDfa5OFA8NKOiGfse1x3iYicdaDdX56C9v3LgclQYnEXKegR9ncOojpm9sFKKPmQU735rtGB7p4PH9GEXwAfPaPrK1mgO9Ag9a6GUHjg51-pblI5WaVIBC-OQnMHua28Lzy540WsZPSSAxHiPWuoefmEA2XADiYSU14jaY03NnV5Q__&Key-Pair-Id=K3RI8219ESW2NK) format("woff2"), url(https://fonts-pw.pixieset.com/fonts/ltccaslon/n7.woff?Expires=1736373611&Signature=g-pWIDoEUfbaTjT7P3JG88x95PMwrTRvnqVgl5JrStGzED3khZ0TDhmK9Ql6aizlEROKFYPO7AG4Huk8n0UtmuaqyH68bn5PlsmotaLSPDWcklxY66EwLQWgWcn4vRxy9-W6IGhas6FtGgplzJfSqDPIpPGvNnf7yVdQ7s9W0Nf2H3spOVhZA5tzeBRdJfw~f7l0o6uSLM-biCBD2kmb~9hErIaRKlYyhwQHt2ofnpSSY4TaYUbtsntd19mPhizAQEJOmEGBXBFwaz2JFQqdYk72dAhXI6FVnIEn6miTBESoI8SJlGKOmbhCog8AHg~-6aqzqr56RPVKze9vHsdGzA__&Key-Pair-Id=K3RI8219ESW2NK) format("woff");
+}
+@font-face {
+	font-family: "LTC Caslon";
+	font-weight: 700;
+	font-style: italic;
+	src: url(https://fonts-pw.pixieset.com/fonts/ltccaslon/i7.woff2?Expires=1736373611&Signature=RQIEoQA4De1260lqwEX8d~FUuEAbMlirGuJkJxVhspfhQIe8NJcvVtIi05WgyjSqeD2ZNRhlpmD0eGtR8rNUNhlWkllSebhRjwsVI3aBvjsR8Y0jsd0zvJ5G07erBQUNIu7dL2BJNs88C7cNBXHrajXfWmyBwP7f9tlscHyFvyzhi6vq7NXe1rqE3vgk~zM1h9hQ4wD0Vsa9EdoDP6g-q~OQIrEG~VdELjW4VypkTqRvoUetg0GuQrZ1E8eXuuWK8tak-wJQbFiVysPNwCuw8l8J3R~ueJBMiXlBvebZrdbTH4ecYkX3k2EozOSORbxXNZ1-HwI6gJtS7pJe318B4Q__&Key-Pair-Id=K3RI8219ESW2NK) format("woff2"), url(https://fonts-pw.pixieset.com/fonts/ltccaslon/i7.woff?Expires=1736373611&Signature=n~Xz4ceBc-U~Weq3-rXDHL4eoejBOJiHt24FNfLMxv-mPxdI0rWl71jHyUGLpYBElCzyl8cYmzrAa1VZlDHVOV3vMetbuh96XchbVrtqjLLFLRyr7G2AnYZrZMHJ8-xCluqzRaLSi0cF21zyCfGQn5578xGfcV55q~nY-RKB1sS-AzKdElg6~i4uabvmz7ABbjHr6nbSkV4dnAbSnNJZDKuD63VnN~QQW2FYSgoi5fBFV8a6OEDXy~AMEpY82lkR4DBUNaHzpsqMHyIp6Ghf8ql09jme5cr87PIb3N4QcV4XC96XTYdwmNFWZDPTsQ8bLck8qT~qMI--ArszDY5BqA__&Key-Pair-Id=K3RI8219ESW2NK) format("woff");
+}
+
+img{
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  }
+
+.carouselspace{
+  max-height: 10vw;
+  object-position: center;
+  height: 50vh;
+  width: 100vw;
+  object-fit: cover;
+}
+  

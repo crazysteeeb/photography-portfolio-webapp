@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Bruner Lane Photography</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Main nav bar-->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <ul class="nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="portfolio.html" id="portfolioDropdown" role="button" aria-expanded="false">PORTFOLIO</a>
+                        <ul class="dropdown-menu" aria-labelledby="portfolioDropdown">
+                            <li><a class="dropdown-item" href="families.html">Families</a></li>
+                            <li><a class="dropdown-item" href="couples.html">Couples</a></li>
+                            <li><a class="dropdown-item" href="seniors.html">Seniors</a></li>
+                            <li><a class="dropdown-item" href="babies.html">Babies</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="packages.html">INVESTMENTS</a></li>
+                </ul>
+    
+                <!-- Centered Logo -->
+                <a href="index.html" class="navbar-brand mx-auto">
+                    <img src="../img/Logo.png" alt="Photographer Logo" draggable="false" style="height: 50; width: 60%;">
+                </a>
+    
+                <ul class="nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="clients.html">CLIENTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="appointment.html">SCHEDULE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="weddings.html">ELOPEMENTS/WEDDINGS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../php/login.php">SIGN IN</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--Mobile Hamburger menu-->
+        <input type="checkbox" id="hamburger-input" class="burger-shower" />
+        <label id="hamburger-menu" for="hamburger-input">
+            <nav id="sidebar-menu">
+                <img src="../img/Logo.png" alt="Photographer Logo" draggable="false" style="height: 10%; width: 60%;">
+                <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="families.html">Families</a></li>
+                <li><a href="couples.html">Couples</a></li>
+                <li><a href="seniors.html">Seniors</a></li>
+                <li><a href="babies.html">Babies</a></li>
+                <li><a href="packages.html">INVESTMENTS</a></li>
+                <li><a href="clients.html">CLIENTS</a></li>
+                <li><a href="appointment.html">SCHEDULE</a></li>
+                <li><a href="weddings.html">ELOPEMENTS/WEDDINGS</a></li>
+                <li><a href="login.php">SIGN IN</a></li>
+                </ul>
+            </nav>
+            </label>
+
+        <div class="overlay"></div>
+    </header>
+
+    <!--Promotional banner (optional)-->
+    <div class="container mt-3" id="promoBanner" style="display: none;">
+        <div class="alert alert-info text-center" role="alert">
+            Check out our latest wedding photography packages!
+        </div>
+    </div>
+    <!--Photo gallery system-->
+    <div class="row">
+        <div class="gallery">
+            <div class="gallery-item">
+                <img draggable="false" src="../img/BrunerLanePhotographs/94890b03bf833fd7160e3b592ba422e1-78dcc553.jpg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img draggable="false" src="../img/BrunerLanePhotographs/947eecf2604edd2c7880560dfaeea7ee-295821d6.jpg" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+                <img draggable="false" src="../img/BrunerLanePhotographs/05924deeb1223994ff3b23268a5f74a2-cedb6c17.jpg" alt="Image 3">
+            </div>
+            <div class="gallery-item">
+                <img draggable="false" src="../img/BrunerLanePhotographs/DSC_0392-5518678e.jpg" alt="Image 4">
+            </div>
+             
+        </div>
+    </div>
+    <div class="row">
+        <div class="gallery">
+            <div class="gallery-item">
+                <img draggable="false" src="../img/BrunerLanePhotographs/Lulu-11-47f88406.jpg" alt="Image 5">
+            </div>
+            <div class="gallery-item">  
+                <img draggable="false" src="../img/BrunerLanePhotographs/05924deeb1223994ff3b23268a5f74a2-cedb6c17.jpg" alt="Image 6">
+            </div>
+            <div class="gallery-item">
+                <img draggable="false" src="../img/BrunerLanePhotographs/94890b03bf833fd7160e3b592ba422e1-78dcc553.jpg" alt="Image 7">
+            </div>
+            <div class="gallery-item">
+                <img draggable="false" src="../img/BrunerLanePhotographs/947eecf2604edd2c7880560dfaeea7ee-295821d6.jpg" alt="Image 8">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tiera Thompson | Follow me on <a href="https://www.instagram.com/brunerlanephotography">Instagram</a></p>
+    </footer>
+
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
