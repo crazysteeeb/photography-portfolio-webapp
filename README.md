@@ -1,11 +1,71 @@
-# CIS-260-W01
-A repository to host the files for Group D's software engineering project.
-Don't be afraid to create new branches as deemed necessary.
+# Photography Portfolio Web Application
 
-## Who this is for...
-Our project is for the [Bruner Lane Photography](https://brunerlanephotography.mypixieset.com/) business, and we will be attempting to move the owner's website off of Pixieset and onto, ideally, their own domain. Domain is now hosted at [Bruner Lane Photography](https://brunerlanephotography.com/)!
+A full-stack photography business website designed to showcase portfolios, manage client interactions, and support appointment scheduling and authentication features.
 
-## Current to-do list
-- [ ] !IMPORTANT! Populate database
-- [ ] link function calls and image flags to database
-- [ ] Create Admin functions, particularly image upload and deletion
+## Overview
+
+This project was developed as a web application for a photography business. The site includes portfolio galleries, service pages, authentication functionality, and backend PHP integration for handling user and image-related operations.
+
+## Features
+
+- Responsive photography portfolio website
+- Client login system
+- Appointment/contact pages
+- Image upload handling
+- PHP backend functionality
+- Styled user interface
+- Multiple photography category pages
+- Session/login management
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- PHP
+- MySQL
+- Visual Studio Code
+
+## Project Structure
+
+```text
+css/            -> Styling and layout
+html/           -> Main website pages
+Javascript/     -> Frontend scripting
+php/            -> Backend PHP functionality
+img/            -> Portfolio and website images
+```
+
+## Key Concepts Demonstrated
+
+- Full-stack web development
+- Frontend/backend integration
+- User authentication
+- File/image handling
+- Website organization and routing
+- Responsive design
+- PHP server-side scripting
+
+## Features Included
+
+- Portfolio galleries
+- Wedding photography pages
+- Family and senior photo pages
+- Appointment booking pages
+- Login/logout system
+- Admin/client landing functionality
+
+## What I Learned
+
+Through this project, I gained experience with:
+- Structuring full-stack web applications
+- Integrating frontend and backend technologies
+- Managing user authentication with PHP
+- Organizing larger multi-directory projects
+- Building responsive and visually organized web pages
+- Handling file uploads and image management
+
+## Author
+
+Steve Ward  
+Computer Science Student | Software Development Enthusiast
